@@ -3,7 +3,7 @@ import {} from 'react'
 
 function Footer (){
   return(
-    <section >
+    <section className='Footer' >
     <h3>@2023-todos os direitos reservados</h3>
     </section>
   )
