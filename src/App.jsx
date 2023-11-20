@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import Banner from "./Components/Banner"
-
+import {} from 'react';
+import { Outlet } from 'react-router-dom';
+import Nav from './Nav'
+import Footer from './Footer';
 
 
 
@@ -8,10 +9,9 @@ function App() {
   
   return (
     <>
-    <div className='container'>
-
-    </div>
-      
+      <Nav />
+      <Outlet/>
+      <Footer/>
     </>
   )
 }

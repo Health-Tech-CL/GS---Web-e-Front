@@ -1,0 +1,10 @@
+{
+    "usuarios": [
+        {
+            "id": 12345,
+            "nome": "Admin",
+            "email": "admin@gmail.com",
+            "senha": "dosecertaapp"
+        }
+    ]
+}

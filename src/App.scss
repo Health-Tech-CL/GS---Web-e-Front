@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Jura:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    max-width: 1000px;
-    margin: 0 auto;
+
+body{
+    background-color: rgb(180, 180, 255);
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .NavBar-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100px;
+    }
+    .tituloNav{
+        padding: 20px;
+        h3{
+            font-family: 'Domine', sans-serif;
+            color: white;
+        }
+        
+    }
 }
