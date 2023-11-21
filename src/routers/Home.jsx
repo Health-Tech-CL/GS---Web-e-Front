@@ -17,18 +17,20 @@ function Home(){
             <div className="content-banner">
                 <img src="./src/assets/imgHome.png" alt="" />
                 <div className='conteudoBanner'>
-                    <div className='contentTitulo'>
-                        <h1 className='tituloHome'>DoseCerta App</h1>
+                    <div className='tituloImagem'>
+                        <img src="./src/assets/titulo.png" alt="" />
                     </div>
                     
                     <div className='fraseHome'>
                         <p className='fraseHomeTexto'>Com o DoseCerta App, nos comprometemos em oferecer soluções<br/>  inovadoras
                         para transformar a gestão de medicamentos em uma<br/> experiência simples, segura e eficaz.</p>
                     </div>
+                    <div className='logoutHome'>
+                        <button className='botaologoutHome' onClick={handleLogout}>Logout</button>
+                    </div>
+
                 </div>
-                <div className='logoutHome'>
-                    <button className='botaologoutHome' onClick={handleLogout}>Logout</button>
-                </div>
+                
                 
                 
             </div>
