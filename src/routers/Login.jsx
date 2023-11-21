@@ -1,34 +1,36 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 
 function Login() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [erro, setErro] = useState('');
-
+  
     const handleSubmit = async () => {
-        try {
+      try {
         const response = await axios.get(`http://localhost:3001/usuarios?email=${email}`);
         const usuario = response.data[0];
-
+  
         if (usuario && usuario.senha === senha) {
-            navigate('/home');
+          // Armazenar dados do usuário na sessionStorage
+          sessionStorage.setItem('usuarioAutenticado', JSON.stringify(usuario));
+          navigate('/home');
         } else {
-            setErro('Dados Incorretos! Insira novamente.');
+          setErro('Dados Incorretos! Insira novamente.');
         }
-        } catch (error) {
+      } catch (error) {
         console.error('Erro ao realizar o login:', error);
         setErro('Erro ao realizar o login. Tente novamente mais tarde.');
-        }
+      }
     };
-  
   
     
 
     return(
             <center>
+                <h1 className='tituloLogin'>Bem-Vindo(a)!</h1>
                 <div className='formularioLogin'>
                     <form className='form'>
                         <h1>Login</h1>
