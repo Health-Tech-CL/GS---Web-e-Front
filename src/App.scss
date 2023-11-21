@@ -112,10 +112,50 @@ body{
     display: flex;
     justify-content: space-between;
     margin-right: 15px;
-    img{
-        height: 500px;
-        padding-left: 10px;
+
+    .content-banner{
+        img{
+            max-height: 600px;
+            padding-left: 10px;
+        }
+
+        .logoutHome{
+            padding-left: 20px;
+            display: flex;
+            justify-content: flex-end;
+            .botaologoutHome{
+                border-radius: 3px;
+                padding: 15px;
+                font-family: 'Domine',sans-serif;;
+                border: none;
+                font-weight: bold;
+                color: #6a52f0;
+                font-size: 15px;
+            }
+            .botaologoutHome:hover{
+                background-color: #c8c0fa;
+            }    
+        }
+
+        .conteudoBanner{
+            display: flex;
+            justify-content: space-between;
+            .fraseHome{
+                display: flex;
+                justify-content: flex-end;
+                .fraseHomeTexto{
+                    font-family: 'Caveat', monospace;
+                    font-size: 30px;
+                    padding-top: 20px;
+                    color: #573cef;
+                    
+                }
+            }
+            
+        }
+        
     }
+    
     .secaoHome{
         max-width: 300px;
         border: 1px solid #7c68ee;
@@ -136,6 +176,7 @@ body{
         }
         .textosHome{
             font-family:'Times New Roman', Times, serif ;
+            display: block;
             text-align: center;
             margin-bottom: 15px;
             color: rgb(0, 0, 0);
@@ -182,6 +223,7 @@ body{
     font-size: 25px;
     margin-left: 10px;
     color: white;
+    padding-top: 30px;
 }
 
 .Footer{

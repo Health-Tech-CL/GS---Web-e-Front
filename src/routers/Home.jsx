@@ -1,66 +1,80 @@
-import {} from 'react'
+import {} from 'react';
+import {useNavigate} from 'react-router';
 
 function Home(){
+
+    const navigate = useNavigate();
+
+    const handleLogout = () =>{
+        sessionStorage.removeItem('usuarioAutenticado');
+        navigate('/');
+    }
+
     return(
         <>
         
         <div className='container'>
             <div className="content-banner">
                 <img src="./src/assets/imgHome.png" alt="" />
-
-            <div className='contentTitulo'>
-                <h1 className='tituloHome'>DoseCerta App</h1>
-            </div>
-
-
+                <div className='conteudoBanner'>
+                    <div className='contentTitulo'>
+                        <h1 className='tituloHome'>DoseCerta App</h1>
+                    </div>
+                    
+                    <div className='fraseHome'>
+                        <p className='fraseHomeTexto'>Com o DoseCerta App, nos comprometemos em oferecer soluções<br/>  inovadoras
+                        para transformar a gestão de medicamentos em uma<br/> experiência simples, segura e eficaz.</p>
+                    </div>
+                </div>
+                <div className='logoutHome'>
+                    <button className='botaologoutHome' onClick={handleLogout}>Logout</button>
+                </div>
+                
+                
             </div>
             <aside className='secaoHome'>
                 <article>
                     <div>
-                        <h1 className='subtitulosHome'>Administração de remédios</h1>
-                        <p className='textosHome'>O esquecimento de remédios prescritos e <br/>controlados 
-                        é muito comum, mas nem sempre<br/> ouvimos falar sobre o quão
-                        problemático isso é,<br/> e que prejuízos podem acarretar o 
-                        paciente em<br/> um período de curto ou longo prazo. É uma 
-                        preocupação<br/> significativa para os profissionais da saúde,
-                        <br/>visto que o esquecimento na administração de<br/> medicamentos 
-                        podem comprometer a eficácia<br/> de remédios resultar em uma 
-                        complicação<br/> desnecessária de saúde no paciente
+                        <h1 className='subtitulosHome'>Administração de Remédios</h1>
+                        <p className='textosHome'>O esquecimento de remédios prescritos e controlados 
+                        é muito comum, mas nem sempre ouvimos falar sobre o quão
+                        problemático isso é,e que prejuízos podem acarretar o 
+                        paciente em um período de curto ou longo prazo. É uma 
+                        preocupação significativa para os profissionais da saúde,
+                        visto que o esquecimento na administração de medicamentos 
+                        podem comprometer a eficácia de remédios resultar em uma 
+                        complicação desnecessária de saúde no paciente
                         </p>
                     </div>
                 </article>
                 <article>
                     <div>
                         <h1 className='subtitulosHome'>Nossa Solução</h1>
-                        <p className='textosHome'>Nossa solução foi pensada para não haver <br/>
-                        mais o esquecimento da administração <br/> de remédios. 
-                        Agora será indicado para <br/> os pacientes o Dose Certa 
-                        App, o aplicativo <br/> responsável por fornecer o lembrete 
-                        dos seus <br/>remédios! Além disso, também daremos um<br/> porta 
-                        comprimidos que  possui um sistema de<br/> ESP32, que irá transmitir 
-                        um som quando<br/> estiver no horário de tomar o medicamento. 
+                        <p className='textosHome'>Nossa solução foi pensada para não haver 
+                        mais o esquecimento da administração de remédios. 
+                        Agora será indicado para os pacientes o DoseCerta 
+                        App, o aplicativo responsável por fornecer o lembrete 
+                        dos seus remédios! Além disso, também daremos um porta 
+                        comprimidos que  possui um sistema de ESP32, que irá transmitir 
+                        um som quando estiver no horário de tomar o medicamento. 
                         </p>
                     </div>
                 </article>
                 <article>
                     <div>
-                        <h1 className='subtitulosHome'>Como ela funcionará?</h1>
-                        <p className='textosHome'>O aplicativo DoseCerta, construído em Python,<br/> simplifica a administração de medicamentos.<br/> 
-                        Os horários são programados pelo profissional de saúde,<br/>
-                        e as notificações são enviadas aos pacientes para garantir lembretes.<br/> Além disso,
-                         o app fornece informações detalhadas sobre cada medicamento.<br/>
-                        O sistema ESP32 é integrado de forma sinérgica, <br/>aprimorando a eficiência da comunicação com a plataforma Python e garantindo uma experiência integrada para o usuário.
-
-
-
-
-
-                    
+                        <h1 className='subtitulosHome'>Como Ela Funcionará?</h1>
+                        <p className='textosHome'>O aplicativo DoseCerta, construído em Python,simplifica a administração de medicamentos.
+                        Os horários são programados pelo profissional de saúde,
+                        e as notificações são enviadas aos pacientes para garantir lembretes.Além disso,
+                        o app fornece informações detalhadas sobre cada medicamento.
+                        O sistema ESP32 é integrado de forma sinérgica, aprimorando a eficiência da comunicação
+                        com a plataforma Python e garantindo uma experiência integrada para o usuário.
                         </p>
                         <p></p>
                     </div>
                 </article>
             </aside>
+            
         </div>
     
         <h1 className='tituloSolto'>Vantagens</h1>
