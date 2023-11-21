@@ -45,15 +45,10 @@ function Home(){
                 <article>
                     <div>
                         <h1 className='subtitulosHome'>Como ela funcionará?</h1>
-                        <p className='textosHome'>A lógica do aplicativo foi toda construída em<br/> Python,
-                        e o funcionamento central do aplicativo<br/> consiste na 
-                        programação dos horários dos<br/>  medicamentos do paciente, 
-                        feito pelo médico(a)<br/> ou enfermeiro(a). O sistema, então, 
-                        entra em ação,<br/> enviando notificações no momento programado<br/>  
-                        para os pacientes, proporcionando-lhes o<br/> lembrete desejado.
-                        Dentro do app, também terá<br/> mais informações do remédio que está 
-                        sendo<br/> consumido, além das informações prescritas pelo<br/> médico.
-                        Já o sistema de ESP32 será construído<br/>  em relação com o Python. 
+                        <p className='textosHome'>O aplicativo DoseCerta, construído em Python,<br/> simplifica a administração de medicamentos.<br/> 
+                        Os horários são programados pelo profissional de saúde,<br/>
+                        e as notificações são enviadas aos pacientes para garantir lembretes.<br/> Além disso,
+                         o app fornece informações detalhadas sobre cada medicamento.<br/>O sistema ESP32 está integrado para otimizar a comunicação com o Python.                       
                         </p>
                         <p></p>
                     </div>
