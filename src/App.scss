@@ -251,5 +251,236 @@ body{
             padding-left: 5px;
         }
     }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .content-banner{
+            img{
+                max-width: 700px;
+                padding-right: 10px;
+            }
+            .conteudoBanner{
+                display: flex;
+                justify-content: space-between;
+                .tituloImagem{
+                    display: flex;
+                    justify-content: flex-start;
+                    height: 250px;
+                }
+                .fraseHome{
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                    .fraseHomeTexto{
+                        display: block;
+                        font-size: 25px;
+                    }
+                }
+                .logoutHome{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 }
-    
+
+@media screen and (min-width: 900px)and (max-width: 1023px){
+    .NavBar{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .NavBar-logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .tituloNav{
+            display: flex;
+            justify-content: flex-end;
+            padding-left: 5px;
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .content-banner{
+            img{
+                max-width: 600px;
+                padding-right: 10px;
+            }
+            .conteudoBanner{
+                .tituloImagem{
+                    display: flex;
+                    justify-content: flex-start;
+                    height: 270px;
+                }
+                .fraseHome{
+                    margin-right: 10px;
+                    .fraseHomeTexto{
+                        
+                        font-size: 21px;
+                    }
+                }
+                .logoutHome{
+                    align-items: flex-end;
+                    
+                    margin-right: 5px;
+                }
+            }
+       
+        }
+
+        .secaoHome{
+            display: flex;
+            flex-direction: column;
+            .textosHome{
+                font-size: 14px;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .NavBar{
+        display: flex;
+        
+        .NavBar-logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .tituloNav{
+            display: flex;
+            justify-content: flex-end;
+            padding-left: 5px;
+        }
+    }
+
+    .container{
+        display: inline-block;
+        flex-direction: column;
+        .content-banner{
+            .imagemHome{
+                max-width: 700px;
+                padding-right: 10px;
+            }
+            .conteudoBanner{
+                .tituloImagem{
+                    display: flex;
+                    justify-content: flex-start;
+                    height: 270px;
+                }
+                .fraseHome{
+                    margin-right: 10px;
+                    .fraseHomeTexto{
+                        
+                        font-size: 21px;
+                    }
+                }
+                .logoutHome{
+                    align-items: flex-end;
+                    
+                    margin-right: 5px;
+                }
+            }
+       
+        }
+
+        .secaoHome{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            max-width: 800px;
+            margin-left: 20px;
+            .textosHome{
+                font-size: 14px;
+            }
+        }
+
+        .diferenciaisHome{
+            display: block;
+            max-width: 800px;
+            margin: 20px;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .NavBar{
+        display: flex;
+        
+        .NavBar-logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .tituloNav{
+            display: flex;
+            justify-content: flex-end;
+            padding-left: 5px;
+        }
+    }
+
+    .container{
+        display: inline-block;
+        flex-direction: column;
+        .content-banner{
+            .imagemHome{
+                max-width: 700px;
+                padding-right: 10px;
+            }
+            .conteudoBanner{
+                .tituloImagem{
+                    display: flex;
+                    justify-content: flex-start;
+                    height: 270px;
+                }
+                .fraseHome{
+                    margin-right: 10px;
+                    .fraseHomeTexto{
+                        font-size: 21px;
+                    }
+                }
+                .logoutHome{
+                    align-items: flex-end;
+                    
+                    margin-right: 5px;
+                }
+            }
+       
+        }
+
+        .secaoHome{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            max-width: 800px;
+            max-height: 500px;
+            margin-left: 20px;
+            .textosHome{
+                font-size: 12px;
+                text-align: justify;
+                padding: 10px;
+            }
+        }
+
+        .diferenciaisHome{
+            display: block;
+            max-width: 800px;
+            margin: 20px;
+
+        }
+
+    }
+}

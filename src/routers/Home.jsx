@@ -15,7 +15,7 @@ function Home(){
         
         <div className='container'>
             <div className="content-banner">
-                <img src="./src/assets/imgHome.png" alt="" />
+                <img src="./src/assets/imgHome.png" className='imagemHome' alt="" />
                 <div className='conteudoBanner'>
                     <div className='tituloImagem'>
                         <img src="./src/assets/titulo.png" alt="" />
