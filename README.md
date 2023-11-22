@@ -9,7 +9,7 @@ No terminal:
   - npm install -D sass 
   - npm install react-router-dom
   - npm install react-router
-  - npm install axios
+  - npm install axios react-router-dom
   - npm install -g json-server
   - Após a instalação do json-server, colocar no terminal:
       <li>json-server dados.json --port 3001</li>
