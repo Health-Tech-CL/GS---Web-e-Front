@@ -2,6 +2,8 @@
 ## Alunas:
 - Camila do Prado Padalino - 98316
 - Luana Cabezaolias Miguel - 99320
+### Repositório GitHub:
+https://github.com/Health-Tech-CL/GS---Web-e-Front.git
 ## Informações Necessárias para rodar o site!
 ### Importações:
 No terminal:
